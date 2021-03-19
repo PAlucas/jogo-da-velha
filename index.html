@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <header>
+        <h1 id="jogador">Jogador 1</h1>
+    </header>
+    <div id="main">
+        <div id="um" class="jogo"></div>
+        <div id="dois" class="jogo"></div>
+        <div id="tres" class="jogo"></div>
+        <div id="quatro" class="jogo"></div>
+        <div id="cinco" class="jogo"></div>
+        <div id="seis" class="jogo"></div>
+        <div id="sete" class="jogo"></div>
+        <div id="oito" class="jogo"></div>
+        <div id="nove" class="jogo"></div>
+    </div>
+    <button>
+        Fim do Jogo
+    </button>
+    <script>
+        const button = document.querySelector("button")
+        const jogador = document.querySelector("#jogador")
+        const quadrado = document.querySelectorAll(".jogo")
+        const jogo = Array.from(quadrado)
+
+        quadrado[0].onclick = () => {
+            if(jogador.innerHTML === "Jogador 1"){
+                quadrado[0].innerHTML = "x"
+                jogador.innerHTML = "Jogador 2"
+            }else {
+                quadrado[0].innerHTML = "o"
+                jogador.innerHTML = "Jogador 1"
+            }   
+        }
+        quadrado[1].onclick = () => {
+            if(jogador.innerHTML === "Jogador 1"){
+                quadrado[1].innerHTML = "x"
+                jogador.innerHTML = "Jogador 2"
+            }else {
+                quadrado[1].innerHTML = "o"
+                jogador.innerHTML = "Jogador 1"
+            }   
+        }
+        quadrado[2].onclick = () => {
+            if(jogador.innerHTML === "Jogador 1"){
+                quadrado[2].innerHTML = "x"
+                jogador.innerHTML = "Jogador 2"
+            }else {
+                quadrado[2].innerHTML = "o"
+                jogador.innerHTML = "Jogador 1"
+            }   
+        }
+        quadrado[3].onclick = () => {
+            if(jogador.innerHTML === "Jogador 1"){
+                quadrado[3].innerHTML = "x"
+                jogador.innerHTML = "Jogador 2"
+            }else {
+                quadrado[3].innerHTML = "o"
+                jogador.innerHTML = "Jogador 1"
+            }   
+        }
+        quadrado[4].onclick = () => {
+            if(jogador.innerHTML === "Jogador 1"){
+                quadrado[4].innerHTML = "x"
+                jogador.innerHTML = "Jogador 2"
+            }else {
+                quadrado[4].innerHTML = "o"
+                jogador.innerHTML = "Jogador 1"
+            }   
+        }
+        quadrado[5].onclick = () => {
+            if(jogador.innerHTML === "Jogador 1"){
+                quadrado[5].innerHTML = "x"
+                jogador.innerHTML = "Jogador 2"
+            }else {
+                quadrado[5].innerHTML = "o"
+                jogador.innerHTML = "Jogador 1"
+            }   
+        }
+        quadrado[6].onclick = () => {
+            if(jogador.innerHTML === "Jogador 1"){
+                quadrado[6].innerHTML = "x"
+                jogador.innerHTML = "Jogador 2"
+            }else {
+                quadrado[6].innerHTML = "o"
+                jogador.innerHTML = "Jogador 1"
+            }   
+        }
+        quadrado[7].onclick = () => {
+            if(jogador.innerHTML === "Jogador 1"){
+                quadrado[7].innerHTML = "x"
+                jogador.innerHTML = "Jogador 2"
+            }else {
+                quadrado[7].innerHTML = "o"
+                jogador.innerHTML = "Jogador 1"
+            }   
+        }
+        quadrado[8].onclick = () => {
+            if(jogador.innerHTML === "Jogador 1"){
+                quadrado[8].innerHTML = "x"
+                jogador.innerHTML = "Jogador 2"
+            }else {
+                quadrado[8].innerHTML = "o"
+                jogador.innerHTML = "Jogador 1"
+            }   
+        }
+
+        button.onclick = () => {
+            console.log(1)
+            if(quadrado[0].innerHTML == quadrado[1].innerHTML && quadrado[2].innerHTML === quadrado[0].innerHTML && quadrado[0].innerHTML === "x") {
+                console.log("Jogador 1 ganhou")
+            }
+            else if(quadrado[0].innerHTML == quadrado[3].innerHTML && quadrado[0].innerHTML == quadrado[6].innerHTML && quadrado[0].innerHTML === "x") {
+                console.log("Jogador 1 ganhou")
+            }
+            else if(quadrado[3].innerHTML == quadrado[4].innerHTML && quadrado[3].innerHTML == quadrado[5].innerHTML && quadrado[3].innerHTML === "x") {
+                console.log("Jogador 1 ganhou")
+            }
+            else if(quadrado[6].innerHTML == quadrado[7].innerHTML && quadrado[6].innerHTML == quadrado[8].innerHTML && quadrado[6].innerHTML === "x") {
+                console.log("Jogador 1 ganhou")
+            }
+            else if(quadrado[1].innerHTML == quadrado[4].innerHTML && quadrado[1].innerHTML == quadrado[7].innerHTML && quadrado[1].innerHTML === "x") {
+                console.log("Jogador 1 ganhou")
+            }
+            else if(quadrado[2].innerHTML == quadrado[5].innerHTML && quadrado[2].innerHTML == quadrado[8].innerHTML && quadrado[2].innerHTML === "x") {
+                console.log("Jogador 1 ganhou")
+            }
+            else if(quadrado[0].innerHTML == quadrado[4].innerHTML && quadrado[0].innerHTML == quadrado[8].innerHTML && quadrado[0].innerHTML === "x") {
+                console.log("Jogador 1 ganhou")
+            }
+            else if(quadrado[2].innerHTML == quadrado[4].innerHTML && quadrado[2].innerHTML == quadrado[6].innerHTML && quadrado[2].innerHTML === "x") {
+                console.log("Jogador 1 ganhou")
+            }
+            else if(quadrado[0].innerHTML == quadrado[1].innerHTML && quadrado[0].innerHTML === quadrado[2].innerHTML  && quadrado[0].innerHTML === "o") {
+                console.log(quadrado[0].innerHTML)
+                console.log("Jogador 2 ganhou")
+            }
+            else if(quadrado[0].innerHTML == quadrado[6].innerHTML && quadrado[0].innerHTML == quadrado[3].innerHTML && quadrado[0].innerHTML === "o") {
+                console.log("Jogador 2 ganhou")
+            }
+            else if(quadrado[3].innerHTML == quadrado[4].innerHTML && quadrado[3].innerHTML == quadrado[5] && quadrado[3].innerHTML === "o") {
+                console.log("Jogador 2 ganhou")
+            }
+            else if(quadrado[6].innerHTML == quadrado[7].innerHTML && quadrado[6].innerHTML == quadrado[8].innerHTML && quadrado[6].innerHTML === "o") {
+                console.log("Jogador 2 ganhou")
+            }
+            else if(quadrado[1].innerHTML == quadrado[4].innerHTML && quadrado[1].innerHTML == quadrado[7].innerHTML && quadrado[1].innerHTML === "o") {
+                console.log("Jogador 2 ganhou")
+            }
+            else if(quadrado[2].innerHTML == quadrado[5].innerHTML && quadrado[2].innerHTML == quadrado[8].innerHTML && quadrado[2].innerHTML === "o") {
+                console.log("Jogador 2 ganhou")
+            }
+            else if(quadrado[0].innerHTML == quadrado[4].innerHTML && quadrado[0].innerHTML == quadrado[8].innerHTML && quadrado[0].innerHTML === "o") {
+                console.log("Jogador 2 ganhou")
+            }
+            else if(quadrado[2].innerHTML == quadrado[4].innerHTML && quadrado[2].innerHTML == quadrado[6].innerHTML && quadrado[2].innerHTML === "o") {
+                console.log("Jogador 2 ganhou")
+            }
+            else {
+                console.log("Velha")
+            }
+        }
+    </script>
+</body>
+</html>
